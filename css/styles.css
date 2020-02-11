@@ -21,13 +21,11 @@ h1 {
  * The subheader (which let's us know whose turn it is) is a little smaller
  * and less prominent.
  */
-
 h2 {
   font-size: 36px;
   font-weight: lighter;
   margin: 2%;
 }
-
 /*
  * The container is a flex-box, which is a powerful layout tool. It grows
  * dyanamically, and allows us to position our elements with precision.
@@ -46,12 +44,10 @@ h2 {
   width: 100%;
   flex-direction: column;       /* align children in columns instead of rows */
 }
-
 /*
  * This ensures that we get three rows of three squares, rather than a single
  * row of nine squares.
  */
-
 .wrap {
   flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
   height: 456px;
