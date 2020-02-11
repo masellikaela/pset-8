@@ -27,7 +27,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #D0CCCD
+  color: "black";
 }
 
 .column {
