@@ -15,7 +15,6 @@ let turn;
 let win;
 let keepScoreX = 0;
 let keepScoreO = 0;
-
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
