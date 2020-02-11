@@ -2,6 +2,9 @@
  * Sets the overall styles for the page. There aren't many. All text
  * is centered, and the font is a monospaced Roboto (from Google).
  */
+background: "black"; 
+color: "white";
+
 body {
   text-align: center;
   font-family: "Times New Roman", monospace;
