@@ -15,15 +15,18 @@ let turn;
 let win;
 let keepScoreX = 0;
 let keepScoreO = 0;
+
 ///////////////////// CACHED ELEMENT REFERENCES /////////////////////
 const squares = Array.from(document.querySelectorAll("#board div"));
 const message = document.querySelector("h2");
+
 ///////////////////// EVENT LISTENERS ///////////////////////////////
 window.onload = init;
 document.getElementById("board").onclick = takeTurn;
 document.getElementById("reset-button").onclick = init;
 document.getElementById('ButtonX').onclick = firstX;
 document.getElementById('ButtonO').onclick = firstO;
+
 ///////////////////// FUNCTIONS /////////////////////////////////////
 function init() {
   board = [
@@ -92,5 +95,6 @@ function getWinner() {
     keepScoreO++;
     document.getElementById('ScoreO').innerHTML = keepScoreO;
   }
+
   return winner ? winner : board.includes("") ? null : "T";
 }
