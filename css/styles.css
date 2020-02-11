@@ -19,8 +19,8 @@ h2 {
   margin: 0.5%;
   border-style: fill;
   padding: 10px;
-  background-color:"white";
-  color: "black";
+  background-color:"black";
+  color: "white";
 }
 
 .container {
@@ -59,7 +59,7 @@ h2 {
 #reset-button {
   background-color: #26ff05;
   border: 1px solid black;
-  color: black;
+  color: "white";
   font-size: 21px;
   line-height: 55px;
   margin: 1%;
@@ -69,7 +69,7 @@ h2 {
 
 #reset-button:hover {
   background-color: #ff05f7;
-  color: white;
+  color: "white";
   cursor: pointer;
 }
 
@@ -91,7 +91,7 @@ button {
 }
 
 button:hover {
-  background-color:"white";
+  background-color:#26ff05;
   color: #ff05f7;
   cursor: pointer;
 }
