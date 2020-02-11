@@ -92,6 +92,5 @@ function getWinner() {
     keepScoreO++;
     document.getElementById('ScoreO').innerHTML = keepScoreO;
   }
-
   return winner ? winner : board.includes("") ? null : "T";
 }
