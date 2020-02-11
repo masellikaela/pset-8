@@ -66,20 +66,16 @@ h2 {
    user-select: none;
    width: 150px;
  }
-
 /*
  * And we give it a little flare when the user mouses over a square.
  */
-
 .square:hover {
   background-color: lightgray;
   cursor: pointer;
 }
-
 /*
  * The reset button sits just below the board.
  */
-
 #reset-button {
   background-color: white;
   border: 1px solid black;
@@ -90,16 +86,12 @@ h2 {
   text-align: center;
   width: 456px;
 }
-
 /*
  * And a little flare when the user mouses over the button. The color scheme
  * switches (background and foreground).
  */
-
 #reset-button:hover {
   background-color: black;
   color: white;
   cursor: pointer;
 }
-
-
