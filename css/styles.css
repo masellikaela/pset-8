@@ -1,6 +1,8 @@
 body {
   text-align: center;
-  font-family: "Ariel", monospace;
+  font-family: "Verdana", monospace;
+  background: "black";
+  color: "white";
 }
 
 h1 {
@@ -8,16 +10,16 @@ h1 {
   font-family: "Major Mono Display", monospace;
   font-size: 50px;
   margin: 2%;
-  color: #D0CCCD;
+  color: "white";
 }
 
 h2 {
   font-size: 25px;
   font-weight: bold;
   margin: 0.5%;
-  border-style: dotted;
+  border-style: fill;
   padding: 10px;
-  background-color:#DEDBD7;
+  background-color:#26ff05;
   color: #213B48;
 }
 
@@ -55,7 +57,7 @@ h2 {
 }
 
 #reset-button {
-  background-color: #DEDBD7;
+  background-color: #26ff05;
   border: 1px solid black;
   color: black;
   font-size: 21px;
@@ -74,7 +76,7 @@ h2 {
 table {
   border-collapse: separate;
   border-spacing: 75px 0;
-  color: #DEDBD7
+  color: #26ff05;
 }
 
 td {
@@ -85,7 +87,7 @@ button {
   font-size: 30px;
   padding: 10px;
   border-radius: 12px;
-  background-color: #DEDBD7
+  background-color: #26ff05;
 }
 
 button:hover {
