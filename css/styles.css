@@ -4,7 +4,7 @@
  */
 body {
   text-align: center;
-  font-family: "Roboto", monospace;
+  font-family: "Times New Roman", monospace;
 }
 /*
  * The header has a different font than the rest of the page. It's the
@@ -70,15 +70,15 @@ h2 {
  * And we give it a little flare when the user mouses over a square.
  */
 .square:hover {
-  background-color: lightgray;
+  background-color: #ff2ef5;
   cursor: pointer;
 }
 /*
  * The reset button sits just below the board.
  */
 #reset-button {
-  background-color: white;
-  border: 1px solid black;
+  background-color: black;
+  border: 1px solid white;
   color: black;
   font-size: 21px;
   line-height: 55px;
@@ -91,7 +91,7 @@ h2 {
  * switches (background and foreground).
  */
 #reset-button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   cursor: pointer;
 }
