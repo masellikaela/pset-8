@@ -1,87 +1,62 @@
-/*
- * Sets the overall styles for the page. There aren't many. All text
- * is centered, and the font is a monospaced Roboto (from Google).
- */
-background: "black"; 
-color: "white";
-
 body {
   text-align: center;
-  font-family: "Times New Roman", monospace;
+  font-family: "Ariel", monospace;
 }
-/*
- * The header has a different font than the rest of the page. It's the
- * title, so it makes sense to make it a little different (and bigger).
- */
+
 h1 {
   margin: 0 auto;
   font-family: "Major Mono Display", monospace;
-  font-size: 48px;
+  font-size: 50px;
   margin: 2%;
+  color: #D0CCCD;
 }
 
-/*
- * The subheader (which let's us know whose turn it is) is a little smaller
- * and less prominent.
- */
 h2 {
-  font-size: 36px;
-  font-weight: lighter;
-  margin: 2%;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0.5%;
+  border-style: dotted;
+  padding: 10px;
+  background-color:#DEDBD7;
+  color: #213B48;
 }
-/*
- * The container is a flex-box, which is a powerful layout tool. It grows
- * dyanamically, and allows us to position our elements with precision.
- */
+
 .container {
-  display: flex;                /* set our display property to use flex-box */
-  justify-content: center;      /* center container horizontally */
-  align-items: center;          /* center content vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #D0CCCD
 }
-/*
- * We want to display the subheader, board, and reset button in a single
- * vertical column.
- */
+
 .column {
   height: 100%;
   width: 100%;
-  flex-direction: column;       /* align children in columns instead of rows */
+  flex-direction: column;
 }
-/*
- * This ensures that we get three rows of three squares, rather than a single
- * row of nine squares.
- */
+
 .wrap {
-  flex-wrap: wrap;              /* tells container to drop down once it reaches max-width */
+  flex-wrap: wrap;
   height: 456px;
   width: 456px;
 }
 
-/*
- * The square itself. We give it a specific size and border.
- */
+.square {
+  border: 1px solid rgba(0, 0, 0, 0.75);
+  font-size: 96px;
+  height: 150px;
+  line-height: 150px;
+  user-select: none;
+  width: 150px;
+}
 
- .square {
-   border: 1px solid rgba(0, 0, 0, 0.75);
-   font-size: 96px;
-   height: 150px;
-   line-height: 150px;
-   user-select: none;
-   width: 150px;
- }
-/*
- * And we give it a little flare when the user mouses over a square.
- */
 .square:hover {
-  background-color: #ff2ef5;
+  background-color:#1C3341;
   cursor: pointer;
 }
-/*
- * The reset button sits just below the board.
- */
+
 #reset-button {
-  background-color: black;
-  border: 1px solid white;
+  background-color: #DEDBD7;
+  border: 1px solid black;
   color: black;
   font-size: 21px;
   line-height: 55px;
@@ -89,12 +64,32 @@ h2 {
   text-align: center;
   width: 456px;
 }
-/*
- * And a little flare when the user mouses over the button. The color scheme
- * switches (background and foreground).
- */
+
 #reset-button:hover {
-  background-color: white;
-  color: black;
+  background-color: #5A7684;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 75px 0;
+  color: #DEDBD7
+}
+
+td {
+  padding: 10px 0;
+}
+
+button {
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 12px;
+  background-color: #DEDBD7
+}
+
+button:hover {
+  background-color:#5A7684;
+  color: white;
   cursor: pointer;
 }
